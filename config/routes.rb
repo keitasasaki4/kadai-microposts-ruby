@@ -1,19 +1,4 @@
 Rails.application.routes.draw do
-  get 'favorites/create'
-  get 'favorites/destroy'
-  get 'relationships/create'
-  get 'relationships/destroy'
-  get 'microposts/create'
-  get 'microposts/destroy'
-  get 'sessions/new'
-  get 'sessions/create'
-  get 'sessions/destroy'
-  get 'users/index'
-  get 'users/show'
-  get 'users/new'
-  get 'users/create'
-  #get 'toppages/index'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root to:'toppages#index'
   
   get 'login', to: 'sessions#new'
